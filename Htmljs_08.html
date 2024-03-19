@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="Ru-Ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Шаблон страницы</title>
+    <meta name="description" content="The HTML5 sample">
+    <meta name="author" content="from internet">
+    <link rel="stylesheet" href="css\styles.css">
+    
+</head>
+<body>
+    <h1>Заголовок</h1>
+    <hr>
+    <p>Текст</p>
+    <script scr="js\scripts.js"></script>
+    <script>
+     let infoPazient=["Рыбаков","Александр","Сергеевич", 18, "июня", 2000, "м"];
+     console.log(infoPazient);
+     console.log(infoPazient[0]);
+     console.log(infoPazient[5]);
+    var person = {
+        "SNILS 1": ["Рыбаков","Александр","Сергеевич", 18, "июня", 2000, "м","исполнено"],
+        "SNILS 2": ["Дудков","Павел","Анатольевич", 24, "августа", 1956, "м","медотвод"],
+        "SNILS 3": ["Кепша","Татьяна","Владимировна", 11, "октября", 1978, "ж","назначено"],  
+    };
+    console.log(person);
+    SNILS4="SNILS 4"
+     let lastname;
+     lastname=prompt("Введите фамилию пациента", lastname);
+     //console.log(lastname);
+     infoPazient[0]=lastname;
+     console.log(infoPazient);
+     let firstname;
+     firstname=prompt("Введите имя пациента", firstname);
+     //console.log(firstname);
+     infoPazient[1]=firstname;
+     console.log(infoPazient);
+     let middlename;
+     middlename=prompt("Введите отчество пациента", middlename);
+     //console.log(middlename);
+     infoPazient[2]=middlename;
+     console.log(infoPazient);
+     let nomber;
+     nomber=prompt("Введите дату рождения пациента", nomber);
+    // console.log(nomber);
+     infoPazient[3]=nomber;
+     console.log(infoPazient);
+     let month;
+     month=prompt("Введите месяц рождения пациента", month);
+    // console.log(month);
+     infoPazient[4]=month;
+     console.log(infoPazient);
+     let date;
+     date=prompt("Введите год рождения пациента", date);
+     //console.log(date);
+     infoPazient[5]=date;
+     console.log(infoPazient);
+     let genger;
+     genger=prompt("Введите пол пациента", genger);
+     //console.log(genger);
+     infoPazient[6]=genger;
+     console.log(infoPazient);
+     let info;
+     genger=prompt("Введите пол пациента", info);
+     //console.log(info);
+     infoPazient[7]=info;
+     console.log(infoPazient);
+    person.SNILS4= infoPazient;
+    console.log(person);
+    /*let SNILS;
+    SNILS=prompt("Введите SNILS пациента", SNILS);
+     infoname=person[SNILS];
+     console.log(infoname);
+     alert("Информация о пациенте "+infoname);
+     /*let phase;
+     phase=prompt("Введите действие или медотвод или назначено или исполнено ", phase);
+     infoname.push(phase);
+     console.log(infoname);
+     person[SNILS]=infoname;
+     console.log(person);
+     //Извлекаем информацию о текущем статусе прививки
+     statusPriv = person[SNILS][7];
+     console.log(statusPriv);
+     //Проверяем возможность изменения статуса
+     if (statusPriv === "исполнено") {
+        alert("Отказано в прививке пациенту" + infoname);
+     } else if (statusPriv === "медотвод") {
+        alert("Отказано в прививке пациенту" + infoname);
+     } else {
+        alert("Исполнить прививку пациенту" + infoname);
+     }*/
+    </script>
+</body>
+</html>
